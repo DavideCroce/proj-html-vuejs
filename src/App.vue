@@ -1,8 +1,8 @@
 <template>
 <div class="maxCoach">
-  <div class="headers">
+  <header>
     <Header/>
-  </div>
+  </header>
 </div>
 </template>
 
@@ -18,5 +18,13 @@ export default {
 </script>
 
 <style lang="scss">
+*{
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 
+body{
+    font-family: sans-serif;
+}
 </style>
