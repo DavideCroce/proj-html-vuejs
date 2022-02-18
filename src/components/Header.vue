@@ -27,6 +27,4 @@ Jumbotron,
     padding-top: 30px;
     font-family: 'Josefin Sans', sans-serif;
 }
-
-
 </style>
