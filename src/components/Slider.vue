@@ -25,7 +25,7 @@ components:{
   display: flex;
   flex-direction: row;
   position: relative;
-
+  margin-bottom: 150px;
 }
 .image-bg{
   background-image: url(../assets/img/home-movation-testimonial-image.jpg);

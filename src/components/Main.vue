@@ -7,6 +7,7 @@
       <BookStore/>
       <Sponsors/>
       <Slider/>
+      <BlogUpdates/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import OnlineCourses from "./OnlineCourses.vue";
 import BookStore from "./BookStore.vue";
 import Sponsors from "./Sponsors.vue";
 import Slider from "./Slider.vue";
+import BlogUpdates from "./BlogUpdates.vue";
 export default {
 name: "Main",
 components: {
@@ -28,9 +30,11 @@ components: {
     BookStore,
     Sponsors,
     Slider,
+    BlogUpdates,
 }
 }
 </script>
 
 <style scoped lang="scss">
+
 </style>
