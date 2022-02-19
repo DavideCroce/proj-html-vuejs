@@ -13,7 +13,7 @@ name:"Header",
 components:{
 TopHeader,
 Jumbotron,
-}
+},
 }
 </script>
 
