@@ -15,7 +15,8 @@ export default {
 name: "OnlineCourses",
 components: {
   CoursesCard,
-}
+},
+
 }
 </script>
 
