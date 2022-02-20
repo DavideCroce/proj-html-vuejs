@@ -82,10 +82,12 @@ data(){
   padding: 20px 15px;
   border-radius: 20px;
   img{
-    width: 400px;
+    width: 410px;
   }
   .card-info{
     padding: 25px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     .price{
       font-size: 25px;
       color: #20ac97;
@@ -106,5 +108,8 @@ data(){
       padding-left: 30px;
     }
   }
+}
+.col-4:hover .card-info{
+  background-color: rgb(233, 233, 233);
 }
 </style>
