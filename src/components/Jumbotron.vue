@@ -30,7 +30,10 @@ name: "Jumbotron",
     border-radius: 5px;
     font-size: 13px;
     margin-top: 20px;
- }
+}
+button:hover{
+    background-color: #3f3a64;
+}
 
 h1{
     font-family: 'Playfair Display', serif;

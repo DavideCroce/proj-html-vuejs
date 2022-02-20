@@ -31,4 +31,8 @@ components: {
   font-size: 13px;
   font-weight: bold;
 }
+.view-more:hover{
+  color: #3f3a64;
+  border-bottom: #3f3a64 solid 2px;
+}
 </style>

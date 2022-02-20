@@ -62,6 +62,9 @@ ul{
     border-radius: 5px;
     font-size: 13px;
   }
+button:hover{
+  background-color: #3f3a64;
+}
   .book-store{
     margin-bottom: 150px;
   }

@@ -32,6 +32,9 @@ button{
     font-size: 13px;
     margin-top: 20px;
 }
+button:hover{
+  background-color: #3f3a64;
+}
 .online-courses{
   margin-bottom: 100px;
   .sub-title{
