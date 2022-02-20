@@ -1,23 +1,8 @@
 <template>
   <div class="sponsors container">
         <div class="row">
-          <div class="col-2 d-flex align-items-center">
-            <img src="../assets/img/client-logo-05-primary.png" alt="">
-          </div>
-          <div class="col-2 d-flex align-items-center">
-            <img src="../assets/img/client-logo-06-primary.png" alt="">
-          </div>
-          <div class="col-2 d-flex align-items-center">
-            <img src="../assets/img/client-logo-07-primary.png" alt="">
-          </div>
-          <div class="col-2 d-flex align-items-center">
-            <img src="../assets/img/client-logo-04-primary.png" alt="">
-          </div>
-          <div class="col-2 d-flex align-items-center">
-            <img src="../assets/img/client-logo-03-primary.png" alt="">
-          </div>
-          <div class="col-2 d-flex align-items-center">
-            <img src="../assets/img/client-logo-02-primary.png" alt="">
+          <div class="col-2 d-flex align-items-center" v-for="sponsor in sponsors" :key="sponsor.image">
+            <img :src="require(`../assets/img/client-logo-${sponsor.image}-primary.png`)" alt="">
           </div>
         </div>
       </div>
@@ -26,6 +11,30 @@
 <script>
 export default {
 name: "Sponsors",
+data(){
+  return{
+    sponsors:[
+      {
+        image:'05',
+      },
+      {
+        image:'06',
+      },
+      {
+        image:'07',
+      },
+      {
+        image:'04',
+      },
+      {
+        image:'03',
+      },
+      {
+        image:'02',
+      },
+    ]
+  }
+}
 }
 </script>
 
