@@ -100,5 +100,8 @@ methods:{
   .gray{
     color: rgb(156, 156, 156);
   }
+  .gray:hover{
+    cursor: pointer;
+  }
 }
 </style>

@@ -46,4 +46,7 @@ img{
     width: 200px;
     vertical-align: top;
 }
+li:hover, i:hover, img:hover{
+    cursor: pointer;
+}
 </style>

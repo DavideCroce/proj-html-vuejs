@@ -31,10 +31,13 @@ name: "Sponsors",
 
 <style scoped lang="scss">
 .sponsors{
-    margin-bottom: 150px;
+  margin-bottom: 150px;
 }
 .col-2{
   filter: grayscale(70%);
   opacity: 0.5;
+}
+.col-2:hover{
+  cursor: pointer;
 }
 </style>

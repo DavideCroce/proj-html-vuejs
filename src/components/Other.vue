@@ -21,6 +21,9 @@ name: "Other",
     font-size: 14px;
     line-height: 22px;
 }
+  .gray:hover{
+      cursor: pointer;
+  }
 .title{
     color: white;
   }

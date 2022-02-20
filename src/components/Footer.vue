@@ -62,4 +62,7 @@ components:{
     padding-top: 17px;
   }
 }
+.up-page:hover{
+  cursor: pointer;
+}
 </style>

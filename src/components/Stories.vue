@@ -7,7 +7,7 @@
               <img :src="require(`../assets/img/testimonial-avata-${item.pic}.jpg`)" alt="">
             </div>
             <div class="user-name">{{item.name}}</div>
-            <div class="user-class">{{item.class}}</div>
+            <div class="user-class">/{{item.class}}</div>
         </div>
   </div>
 </template>
@@ -57,6 +57,9 @@ props: ['item', 'index', 'currentIndex'],
       color: #20ac97;
       padding-bottom: 30px;
     }
+}
+.slider:hover .user-pic,.user-class,.user-name{
+  cursor: pointer;
 }
 
 </style>

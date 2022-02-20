@@ -40,6 +40,8 @@ footer{
   background-color: #171621;
   padding-top: 60px;
 }
-
+button:hover{
+  cursor: pointer;
+}
 
 </style>

@@ -67,8 +67,11 @@ data(){
   position: relative;
   padding-bottom: 50px;
 }
-.col-3:hover .to-do{
-  display: block;
+.col-3:hover{
+  cursor: pointer; 
+  .to-do{
+    display: block;
+  }
 }
 .to-do{
   list-style-type: none;
