@@ -55,14 +55,14 @@ data(){
   }
 },
 methods:{
-  before(){
+  after(){
     if(this.currentIndex >= this.slides.length - 1){
       this.currentIndex = 0;
     }else{
       this.currentIndex++;
     }
   },
-  after(){
+  before(){
     if(this.currentIndex <= 0){
       this.currentIndex = this.slides.length - 1;
     }else{
