@@ -1,13 +1,13 @@
 <template>
   <div class="real-stories">
-    <Stories/>
-        <div class="circle text-center align-items-center">
-          <div class="gray"><i class="fas fa-caret-up"></i></div>
-          <div class="counter">1/4</div>
-          <div class="gray"><i class="fas fa-caret-down"></i></div>
-        </div>
-        <div class="image-bg col-5"></div>
-      </div>
+    <Stories :item="slide" v-for="(slide, index) in slides" :key="slide.name" :index="index" :currentIndex="currentIndex"/>
+    <div class="circle text-center align-items-center">
+          <div class="gray"><i class="fas fa-caret-up" @click="before"></i></div>
+          <div class="counter" v-for="(numb,index) in numbs" :key="numb.number" v-show="currentIndex === index">{{numb.number}}/4</div>
+          <div class="gray"><i class="fas fa-caret-down" @click="after"></i></div>
+    </div>
+    <div class="image-bg col-5"></div>
+  </div>
 </template>
 
 <script>
@@ -15,8 +15,61 @@ import Stories from "./Stories.vue";
 export default {
 name: "Slider",
 components:{
-    Stories,
+  Stories,
 },
+data(){
+  return{
+    currentIndex: 0,
+    slides:[
+      {
+        story: 'I am free to learn my own pace, follow my own schedule and choose the subject I want to learn from syllabus. Great study portal for people like me.',
+        pic: '02',
+        name:'Mina Hollace',
+        class:'/Freelancer',
+      },
+      {
+        story: "Concentrate all your thoughts upon the work in hand. The sun's rays do not burn until brought to a focus.",
+        pic: '01',
+        name:'Terry Raynor',
+        class:'/Soldier',
+      },
+      {
+        story: "One of the best pieces of advice I ever got was from a horse master. He told me to go slow to go fast. I think that applies to everything in life.",
+        pic: '03',
+        name:'Martin Larsson',
+        class:'/ProPlayer',
+      },
+      {
+        story: "Developing a good work ethic is key. Apply yourself at whatever you do, whether you're a janitor or taking your first summer job because that work ethic will be reflected in everything you do in life.",
+        pic: '04',
+        name:'Nathan Drake',
+        class:'Explorer',
+      }
+    ],
+    numbs:[
+      {number: '1'},
+      {number: '2'},
+      {number: '3'},
+      {number: '4'},
+    ],
+  }
+},
+methods:{
+  before(){
+    if(this.currentIndex >= this.slides.length - 1){
+      this.currentIndex = 0;
+    }else{
+      this.currentIndex++;
+    }
+  },
+  after(){
+    if(this.currentIndex <= 0){
+      this.currentIndex = this.slides.length - 1;
+    }else{
+      this.currentIndex--;
+    }
+  },
+}
 }
 </script>
 

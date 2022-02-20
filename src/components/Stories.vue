@@ -1,27 +1,28 @@
 <template>
-  <div class="slider col-7">
-          <div class="content text-center">
+  <div class="slider col-7" v-show="currentIndex === index">
+        <div class="content text-center">
             <div class="title-green">REAL STORIES</div>
-            <div class="story">I am free to learn my own pace, follow my own schedule and choose the subject I want to learn from syllabus. Great study portal for people like me.</div>
+            <div class="story">{{item.story}}</div>
             <div class="user-pic">
-              <img src="../assets/img/testimonial-avata-02.jpg" alt="">
+              <img :src="require(`../assets/img/testimonial-avata-${item.pic}.jpg`)" alt="">
             </div>
-            <div class="user-name">Mina Hollace</div>
-            <div class="user-class">/Freelancer</div>
-          </div>
+            <div class="user-name">{{item.name}}</div>
+            <div class="user-class">{{item.class}}</div>
         </div>
+  </div>
 </template>
 
 <script>
 export default {
 name: "Stories",
+props: ['item', 'index', 'currentIndex'],
 }
 </script>
 
 <style scoped lang="scss">
 .slider{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
     background-image: url(../assets/img/background-pattern-wavify.png);
     background-repeat: repeat;
     background-color: #dfdfdf;
@@ -57,4 +58,5 @@ name: "Stories",
       padding-bottom: 30px;
     }
 }
+
 </style>
