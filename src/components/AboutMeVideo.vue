@@ -2,7 +2,7 @@
   <div class="aboutme-video-player container">
           <div class="row">
               <div class="col-8 d-flex justify-content-center">
-                  <img src="../assets/img/icon-youtube-play.png" alt="">
+                  <img class="yt-button" src="../assets/img/icon-youtube-play.png" alt="">
               </div>
               <div class="col-4 align-items-center">
                   <h2>"Every morning you have two choices: continue to sleep with your dreams, or wake up and chase them".</h2>
@@ -22,6 +22,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.yt-button:hover{
+    cursor: pointer;
+}
 .aboutme-video-player{
     padding-bottom: 150px;
 }
