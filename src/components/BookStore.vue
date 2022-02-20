@@ -4,23 +4,21 @@
           <div class="col-5 books-info">
             <p class="subtitle">BOOK STORE ONLINE</p>
             <h1>Be Alpha With <span class="green">Wingman's Book</span></h1>
-            <ul>
-              <li><span class="green"><i class="fas fa-check"></i></span>Help you understand yourself better</li>
-              <li><span class="green"><i class="fas fa-check"></i></span>Revealing mature tips</li>
-              <li><span class="green"><i class="fas fa-check"></i></span>Give the right advice</li>
-              <li><span class="green"><i class="fas fa-check"></i></span>Fascinating examples of alpha man</li>
+            <ul v-for="improve in improves" :key="improve.thing" class="improves">
+              <li><span class="green"><i class="fas fa-check"></i></span>{{improve.thing}}</li>
             </ul>
             <button>Get Free Ebook</button>
           </div>
-          <div class="col-3 book text-center">
-            <img src="../assets/img/product-book-11-400x400.jpg" alt="">
-            <p class="title">Alpha man by Maxcoach</p>
-            <div class="price">$29.<span class="smaller">00</span></div>
-          </div>
-          <div class="col-3 book text-center">
-            <img src="../assets/img/product-book-10-400x400.jpg" alt="">
-            <p class="title">Real man 4.0 by Maxcoach</p>
-            <div class="price">$39.<span class="smaller">00</span></div>
+          <div class="col-3 book text-center" v-for="book in books" :key="book.title">
+            <ul class="to-do">
+              <li><i class="fas fa-search"></i></li>
+              <li><i class="fas fa-shopping-cart"></i></li>
+              <li><i class="far fa-heart"></i></li>
+              <li><i class="fas fa-signal"></i></li>
+            </ul>
+            <img :src="require(`../assets/img/product-book-${book.image}-400x400.jpg`)" alt="">
+            <p class="title">{{book.title}}</p>
+            <div class="price">${{book.big}}.<span class="smaller">{{book.small}}</span></div>
           </div>
         </div>
       </div>
@@ -29,16 +27,67 @@
 <script>
 export default {
 name: "BookStore",
+data(){
+  return{
+    books:[
+      {
+        image: '11',
+        title: 'Alpha man by Maxcoach',
+        big: '29',
+        small: '00',
+      },
+      {
+        image: '10',
+        title: 'Real man 4.0 by Maxcoach',
+        big: '39',
+        small: '00',
+      }
+    ],
+    improves:[
+      {
+        thing: 'Help you understand yourself better',
+      },
+      {
+        thing: 'Revealing mature tips',
+      },
+      {
+        thing: 'Give the right advice',
+      },
+      {
+        thing: 'Fascinating examples of alpha man',
+      },
+    ]
+  }
+}
 }
 </script>
 
 <style scoped lang="scss">
-ul{
+.col-3{
+  position: relative;
+  padding-bottom: 50px;
+}
+.col-3:hover .to-do{
+  display: block;
+}
+.to-do{
+  list-style-type: none;
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  display: none;
+  li{
+    color: black;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px 13px;
+    border-radius: 50%;
+  }
+}
+.improves{
     list-style-type: none;
     padding-left: 0;
-    padding-bottom: 25px;
     li{
-      padding-bottom: 15px;
       color: grey;
       span{
         padding-right: 10px;
@@ -55,7 +104,7 @@ ul{
   }
   button{
     padding: 15px 60px;
-     background-color: #20ac97;
+    background-color: #20ac97;
     color: white;
     font-weight: 500;
     border: none;
