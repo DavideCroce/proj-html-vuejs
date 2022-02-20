@@ -15,7 +15,7 @@
         <p><i class="far fa-copyright"></i> 2020 Maxcoach. All Rights Reserved</p>
       </div>
     </div>
-    <div class="up-page text-center">
+    <div class="up-page text-center" @click="scrollToTop">
         <i class="fas fa-arrow-up"></i>
       </div>
     </div>
@@ -33,6 +33,11 @@ components:{
     Explore,
     Other,
     Information,
+},
+methods:{
+scrollToTop(){
+  window.scrollTo(0,0)
+}
 }
 }
 </script>
