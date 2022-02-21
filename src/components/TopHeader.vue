@@ -1,7 +1,7 @@
 <template>
   <div class="topheader container">
           <div class="row">
-              <div class="col-6 col-sm-6 col-md-3 d-flex align-items-center">
+              <div class="col-6 col-sm-6 col-md-6 d-flex align-items-center">
                     <img src="../assets/img/dark-logo.png" alt="">
               </div>
               <div class="col-md-6 col-sm-6 col-6 menu" >
@@ -17,7 +17,7 @@
                       <i class="fas fa-bars"></i>
                   </nav>
               </div>
-              <div class="col-2 d-flex justify-content-around align-items-center ms-5">
+              <div class="col-2 d-flex justify-content-around align-items-center ms-5 socials">
                   <i class="fab fa-twitter"></i>
                   <i class="fab fa-facebook-f"></i>
                   <i class="fab fa-instagram"></i>
@@ -104,6 +104,20 @@ li:hover, i:hover, img:hover{
         align-items: center;
         justify-content: flex-end;
         margin: 0;
+    }
+}
+@media screen and (max-width: 991px){
+    .socials{
+        display: none;
+        .fab{
+            display: none;
+        }
+    }
+    li{
+        padding: 0 12px;
+        .fas{
+            display:none;
+        }
     }
 }
 </style>

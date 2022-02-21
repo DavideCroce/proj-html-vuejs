@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron container">
           <div class="row">
-                <div class="col-12 col-sm-12 col-md-5 pb-5 ">
+                <div class="col-12 col-sm-12 col-md-12 pb-5 ">
                     <p class="pt-5">I'M WINGMAN</p>
                     <h1>Peace On Earth A Wonderful Wish But No Way</h1>
                     <p>Success isn't overnight. It's when everyday you get a little better than the day before. It all adds up.</p>
@@ -62,6 +62,14 @@ h1{
     }
 }
 @media screen and (max-width: 767px){
+    .images {
+        width: 0;
+    }
+    img{
+        display: none;
+    }
+}
+@media screen and (max-width: 991px){
     .images {
         width: 0;
     }
