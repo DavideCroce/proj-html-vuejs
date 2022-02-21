@@ -1,7 +1,7 @@
 <template>
   <div class="sponsors container">
         <div class="row">
-          <div class="col-2 d-flex align-items-center" v-for="sponsor in sponsors" :key="sponsor.image">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-2 d-flex align-items-center sponsor" v-for="sponsor in sponsors" :key="sponsor.image">
             <img :src="require(`../assets/img/client-logo-${sponsor.image}-primary.png`)" alt="">
           </div>
         </div>
@@ -42,11 +42,27 @@ data(){
 .sponsors{
   margin-bottom: 150px;
 }
-.col-2{
+.sponsor{
   filter: grayscale(70%);
   opacity: 0.5;
 }
-.col-2:hover{
+.sponsor:hover{
   cursor: pointer;
+}
+
+@media screen and (max-width: 575px){
+  .sponsor{
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px){
+  .sponsor{
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 991px){
+  .sponsor{
+    margin-bottom: 40px;
+  }
 }
 </style>
