@@ -2,10 +2,10 @@
 <div class="aboutme-text container">
           <p class="about-me">ABOUT ME</p>
           <div class="row">
-              <div class="col-6 title d-flex justify-content-start">
+              <div class="col-12 col-sm-12 col-md-6 title d-flex justify-content-start">
                   <h1>How to Be an Aplha Male: The 15 Habits of True Alphas</h1>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-sm-12 col-md-6">
                   <p class="strong">Want to learn how to be <span class="green">an alpha male</span>? How to be more masculine? How to be the man you've always wanted to be?</p>
                   <p class="grey">Your goal is to show the consistency of business, core values, and customer care. Punctualty, responsibility, individuality, accuracy, enthusiasm - you have to clearly explain how these qualities are applicable to your work. And the important thing is you to love what you do.</p>
               </div>
