@@ -1,7 +1,7 @@
 <template>
   <div class="courses container justify-content-center">
           <div class="row">
-            <div v-for="course in courses" :key="course.lenght" class="col-4">
+            <div v-for="course in courses" :key="course.lenght" class="col-12 col-sm-12 col-md-6 col-lg-4 card">
               <img :src="require(`../assets/img/motivation-course-${course.image}-480x298.jpg`)" alt="">
               <div class="card-info">
                 <p class="price">{{course.pricebig}}.<span class="smaller">{{course.pricesmall}}</span></p>
@@ -78,9 +78,10 @@ data(){
 </script>
 
 <style scoped lang="scss">
-.col-4{
+.card{
   padding: 20px 15px;
   border-radius: 20px;
+  border: none;
   img{
     width: 100%;
   }
