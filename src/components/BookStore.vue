@@ -1,7 +1,7 @@
 <template>
   <div class="book-store container">
         <div class="row">
-          <div class="col-5 books-info">
+          <div class="col-12 col-sm-12 col-md-5 books-info">
             <p class="subtitle">BOOK STORE ONLINE</p>
             <h1>Be Alpha With <span class="green">Wingman's Book</span></h1>
             <ul v-for="improve in improves" :key="improve.thing" class="improves">
@@ -9,7 +9,7 @@
             </ul>
             <button>Get Free Ebook</button>
           </div>
-          <div class="col-3 book text-center" v-for="book in books" :key="book.title">
+          <div class="col-12 col-sm-6 col-md-3 book text-center" v-for="book in books" :key="book.title">
             <ul class="to-do">
               <li><i class="fas fa-search"></i></li>
               <li><i class="fas fa-shopping-cart"></i></li>
@@ -63,11 +63,11 @@ data(){
 </script>
 
 <style scoped lang="scss">
-.col-3{
+.book{
   position: relative;
   padding-bottom: 50px;
 }
-.col-3:hover{
+.book:hover{
   cursor: pointer; 
   .to-do{
     display: block;
@@ -136,6 +136,26 @@ button:hover{
       font-weight: 500;
       .smaller{
         font-size: 18px;
+      }
+    }
+  }
+  @media screen and (max-width: 575px){
+    .books-info{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h1{
+        padding-right: 0;
+      }
+    }
+  }
+    @media screen and (max-width: 767px){
+    .books-info{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      h1{
+        padding-right: 0;
       }
     }
   }
