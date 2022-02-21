@@ -81,11 +81,4 @@ scrollToTop(){
   padding-bottom: 50px;
 }
 
-// @media screen and (max-width: 575px){
-//   .main-footer{
-//     display: flex;
-//     justify-content: center;
-//      flex-direction: column;
-//    }
-// }
 </style>
