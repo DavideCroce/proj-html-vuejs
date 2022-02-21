@@ -1,5 +1,5 @@
 <template>
-  <div class="real-stories">
+  <div class="real-stories d-flex">
     <Stories :item="slide" v-for="(slide, index) in slides" :key="slide.name" :index="index" :currentIndex="currentIndex"/>
     <div class="circle text-center align-items-center">
           <div class="gray"><i class="fas fa-caret-up" @click="before"></i></div>
@@ -107,7 +107,8 @@ methods:{
 @media screen and (max-width: 575px){
   .circle{
     top: 95%;
-    right: 42%
+    align-self: center;
+    margin-right: 40px;
   }
   .image-bg{
     display: none;
