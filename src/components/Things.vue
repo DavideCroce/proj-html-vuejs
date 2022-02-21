@@ -1,5 +1,5 @@
 <template>
-  <div class="col-5 things">
+  <div class="things">
           <p class="title"><strong>Address</strong></p>
           <p class="gray">382 NE 191st St # 87394 Miami, FL 33179-3899</p>
           <p class="gray">+1 (305) 574-9909 (9am - 5pm EST, Monday - Friday)</p>

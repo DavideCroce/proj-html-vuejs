@@ -34,4 +34,7 @@ name: "Explore",
       padding: 5px 0;
     }
   }
+  .explore{
+    margin: 0;
+  }
 </style>

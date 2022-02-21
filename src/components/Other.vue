@@ -37,4 +37,7 @@ name: "Other",
       padding: 5px 0;
     }
   }
+  .other{
+    margin: 0;
+  }
 </style>

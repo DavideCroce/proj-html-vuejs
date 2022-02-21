@@ -35,4 +35,7 @@ ul{
       padding: 5px 0;
     }
 }
+.information{
+  margin: 0;
+}
 </style>

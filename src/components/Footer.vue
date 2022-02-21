@@ -2,8 +2,10 @@
   <div class="main-footer">
       <div class="footer container">
       <div class="row">
-        <Things/>
-        <div class="col-5 container">
+        <div class="col-8 col-sm-8 col-md-5 text-start address">
+          <Things/>
+        </div>
+        <div class="col-12 col-sm-12 col-md-5 container other-u-list justify-content-center">
           <div class="row">
               <Explore/>
               <Other/>
@@ -49,7 +51,7 @@ scrollToTop(){
     line-height: 22px;
 }
 .main-footer{
-    position: relative;
+  position: relative;
 }
 .credits{
   padding-bottom: 40px;
@@ -70,4 +72,20 @@ scrollToTop(){
 .up-page:hover{
   cursor: pointer;
 }
+.other-u-list{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.address{
+  padding-bottom: 50px;
+}
+
+// @media screen and (max-width: 575px){
+//   .main-footer{
+//     display: flex;
+//     justify-content: center;
+//      flex-direction: column;
+//    }
+// }
 </style>
