@@ -123,7 +123,7 @@ button:hover{
   .book{
     // padding: 15px;
     img{
-      height: 300px;
+      width: 100%;
     }
     .title{
       font-size: 20px;

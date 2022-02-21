@@ -82,7 +82,7 @@ data(){
   padding: 20px 15px;
   border-radius: 20px;
   img{
-    width: 410px;
+    width: 100%;
   }
   .card-info{
     padding: 25px;

@@ -51,7 +51,7 @@ data(){
 .update-card{
   padding-top: 50px;
   img{
-    width: 300px;
+    width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
   }

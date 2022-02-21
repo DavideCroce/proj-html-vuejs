@@ -35,7 +35,7 @@ export default {
     border-radius: 10px;
     padding: 250px 0;
     img{
-        width: 120px;
+        width: 20%;
     }
 }
 .col-4{
