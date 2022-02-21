@@ -1,5 +1,5 @@
 <template>
-  <div class="slider col-7" v-show="currentIndex === index">
+  <div class="slider col-12 col-sm-12 col-md-12 col-lg-7" v-show="currentIndex === index">
         <div class="content text-center">
             <div class="title-green">REAL STORIES</div>
             <div class="story">{{item.story}}</div>
@@ -26,6 +26,7 @@ props: ['item', 'index', 'currentIndex'],
     background-image: url(../assets/img/background-pattern-wavify.png);
     background-repeat: repeat;
     background-color: #dfdfdf;
+    padding: 50px 0;
 }
 .content{
     display: flex;
@@ -60,6 +61,11 @@ props: ['item', 'index', 'currentIndex'],
 }
 .slider:hover .user-pic,.user-class,.user-name{
   cursor: pointer;
+}
+@media screen and (max-width: 575px){
+  .content{
+    width: 90%;
+  }
 }
 
 </style>

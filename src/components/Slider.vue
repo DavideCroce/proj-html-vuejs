@@ -6,7 +6,7 @@
           <div class="counter" v-for="(numb,index) in numbs" :key="numb.number" v-show="currentIndex === index">{{numb.number}}/4</div>
           <div class="gray"><i class="fas fa-caret-down" @click="after"></i></div>
     </div>
-    <div class="image-bg col-5"></div>
+    <div class="image-bg col-12 col-sm-12 col-md-12 col-lg-5"></div>
   </div>
 </template>
 
@@ -102,6 +102,33 @@ methods:{
   }
   .gray:hover{
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 575px){
+  .circle{
+    top: 95%;
+    right: 42%
+  }
+  .image-bg{
+    display: none;
+  }
+}
+@media screen and (max-width: 767px){
+  .circle{
+    top: 95%;
+    left: 39%;
+  }
+  .image-bg{
+    display: none;
+  }
+}
+@media screen and (max-width: 991px){
+  .circle{
+    top: 95%;
+    left: 42%;
+  }
+  .image-bg{
+    display: none;
   }
 }
 </style>
