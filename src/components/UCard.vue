@@ -1,7 +1,7 @@
 <template>
   <div class="update-card container">
           <div class="row">
-            <div v-for="update in updates" :key="update.lenght" class="col-12 col-sm-12 col-md-6">
+            <div v-for="update in updates" :key="update.lenght" class="col-12 col-sm-12 col-md-6 col-lg-3">
               <img :src="require(`../assets/img/motivation-blog-${update.image}-480x325.jpg`)" alt="">
               <div class="date"><i class="far fa-calendar"></i> {{update.date}}</div>
               <h3>{{update.title}}</h3>
