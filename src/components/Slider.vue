@@ -79,6 +79,7 @@ methods:{
   flex-direction: row;
   position: relative;
   margin-bottom: 150px;
+  max-width: 1400px;
 }
 .image-bg{
   background-image: url(../assets/img/home-movation-testimonial-image.jpg);
