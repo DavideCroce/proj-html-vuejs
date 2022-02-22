@@ -110,7 +110,7 @@ data(){
     }
   }
 }
-.col-4:hover .card-info{
+.card:hover .card-info{
   background-color: rgb(233, 233, 233);
 }
 .courses:hover{
