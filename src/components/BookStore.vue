@@ -12,7 +12,7 @@
           <div class="col-12 col-sm-6 col-md-3 book text-center" v-for="book in books" :key="book.title">
             <ul class="to-do">
               <li><i class="fas fa-search"></i></li>
-              <li><i class="fas fa-shopping-cart"></i></li>
+              <li><a :href="book.amazon" target="_blank"><i class="fas fa-shopping-cart"></i></a></li>
               <li><i class="far fa-heart"></i></li>
               <li><i class="fas fa-signal"></i></li>
             </ul>
@@ -35,12 +35,14 @@ data(){
         title: 'Alpha man by Maxcoach',
         big: '29',
         small: '00',
+        amazon: 'https://www.amazon.it/Alpha-Man-Restoring-Your-Original/dp/1796695602/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1F7TFUTBL92H1&keywords=alpha+man&qid=1645543667&sprefix=alpha+man%2Caps%2C65&sr=8-1'
       },
       {
         image: '10',
         title: 'Real man 4.0 by Maxcoach',
         big: '39',
         small: '00',
+        amazon: 'https://www.amazon.it/Real-Strength-Men-freedom-prison/dp/1939828899/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=39KUTKBSQ4IR&keywords=real+men+4.0&qid=1645543746&sprefix=real+man+4.0%2Caps%2C76&sr=8-1'
       }
     ],
     improves:[
@@ -66,6 +68,9 @@ data(){
 .book{
   position: relative;
   padding-bottom: 50px;
+  a{
+    color: black;
+  }
 }
 .book:hover{
   cursor: pointer; 

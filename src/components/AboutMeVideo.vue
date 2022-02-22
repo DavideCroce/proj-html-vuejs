@@ -9,6 +9,7 @@
                   <img src="../assets/img/home-movation-shape-01.png" alt="">
                   <p class="name"><strong>Kaixa Stark</strong></p>
                   <p class="small">WINGMAN</p>
+                  <a href="https://www.youtube.com/watch?v=1JXmzQAmBMc" target="_blank"><p class="name">Qui il link al video</p></a>
               </div>
           </div>
       </div>
