@@ -17,13 +17,20 @@
                       <div class="vertical-menu">
                           <i class="fas fa-bars"></i>
                           <div class="vertical-nav">
-                                <ul class="d-flex vertical-ul flex-row">
-                                    <li> <i class="fas fa-chevron-down"></i>  Home</li>
-                                    <li> <i class="fas fa-chevron-down"></i>  Pages</li>
-                                    <li> <i class="fas fa-chevron-down"></i>  Courses</li>
-                                    <li> <i class="fas fa-chevron-down"></i>  Features</li>
-                                    <li> <i class="fas fa-chevron-down"></i>  Blog</li>
-                                    <li> <i class="fas fa-chevron-down"></i>  Shop</li>
+                                <ul class="d-flex vertical-ul flex-column">
+                                    <li><i class="fas fa-bars white ps-3"></i></li>
+                                    <li> <i class="fas fa-chevron-left"></i>  Home</li>
+                                    <li> <i class="fas fa-chevron-left"></i>  Pages</li>
+                                    <li> <i class="fas fa-chevron-left"></i>  Courses</li>
+                                    <li> <i class="fas fa-chevron-left"></i>  Features</li>
+                                    <li> <i class="fas fa-chevron-left"></i>  Blog</li>
+                                    <li> <i class="fas fa-chevron-left"></i>  Shop</li>
+                                </ul>
+                                <ul class="socials d-flex flex-column vertical-ul">
+                                    <li><i class="fab fa-twitter"></i></li>
+                                    <li><i class="fab fa-facebook-f"></i></li>
+                                    <li><i class="fab fa-instagram"></i></li>
+                                    <li><i class="fab fa-linkedin"></i></li>
                                 </ul>
                           </div>
                       </div>
@@ -80,9 +87,28 @@ li:hover, i:hover, img:hover{
     }
 }
 
-.vertical-menu:hover .vertical-ul{
+.vertical-menu:active{
+    position: fixed;
+    padding-top: 50px;
+    top: -25px;
+    right: 0;
+    height: 150vh;
+    background-color: rgba($color: #000000, $alpha: 0.7);
+    width: 25vw;
     li{
         display: block;
+        color: white;
+        padding: 15px 0;
+        padding-right: 20px;
+    }
+    .vertical-nav{
+        padding-top: 50px;
+    }
+    .socials{
+        color: white
+    }
+    .white{
+        color: white;
     }
 }
 
