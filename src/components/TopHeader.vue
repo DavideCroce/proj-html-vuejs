@@ -25,12 +25,10 @@
                                     <li> <i class="fas fa-chevron-left"></i>  Features</li>
                                     <li> <i class="fas fa-chevron-left"></i>  Blog</li>
                                     <li> <i class="fas fa-chevron-left"></i>  Shop</li>
-                                </ul>
-                                <ul class="socials d-flex flex-column vertical-ul">
-                                    <li><i class="fab fa-twitter"></i></li>
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                    <li><i class="fab fa-instagram"></i></li>
-                                    <li><i class="fab fa-linkedin"></i></li>
+                                    <li><i class="fab fa-twitter bigger"></i></li>
+                                    <li><i class="fab fa-facebook-f bigger"></i></li>
+                                    <li><i class="fab fa-instagram bigger"></i></li>
+                                    <li><i class="fab fa-linkedin bigger"></i></li>
                                 </ul>
                           </div>
                       </div>
@@ -109,6 +107,10 @@ li:hover, i:hover, img:hover{
     }
     .white{
         color: white;
+    }
+    .bigger{
+        font-size: 20px;
+        padding: 0 20px;
     }
 }
 
